@@ -51,3 +51,10 @@ First data-set will be the "Ballon d'or winner 2026". It is a long-running Polym
 
 We will initially ignore the 2 cent spread. We also acknowledge this is low-frequency mean-reversion. We can go hours with no trades. Does this allow a patient orderinary trader to exploit mean reversion, especially as odds may converge towards resolution time?
 
+Now we calculate the difference between polymarket probabilities and bookmaker adjusted probabilities. We care about the first differnce ACF. As the probabilities of the 2 sources diverge do they continue to diverge (polymarket momentum) OR do we see a negative ACF (mean-reverting tendencies). 
+We also want to run a ADF test on the difference between the probabilities themselves to check if the difference is stationary. This would mean the markets are cointegrated and any diversion would support a mean-reverting trade.
+
+HMM note: this could include a potential usage of a markov chain. 
+2 potential regimes: spread is mean-reverting & spread is diverging
+
+**06/06/2026**
